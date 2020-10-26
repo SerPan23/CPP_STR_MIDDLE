@@ -15,7 +15,7 @@ bool Compare(string S1, string S2);
 int kol_slov(string str);
 string dlin_slovo(string str);
 char simvol(string str);
-bool ispodstroka(string str1, string str2);
+bool str_bool(string str1, string str2);
 string Cezar(string str, int k);
 string not_probel_str(string str);
 bool ip(string str);
