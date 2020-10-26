@@ -3,5 +3,7 @@ unsigned char ToUpper(unsigned char c)
 {
     if (c >= 'A' && c <= 'Z')
         return c;
-    return 'a'-'b';
+    else if (c >= 'a' && c <= 'z')
+        return c-32;
+    return c;
 }
