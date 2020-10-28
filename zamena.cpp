@@ -14,13 +14,10 @@ string zamena(string str)
                 ch += int(str[j])-48;
                 pos++;
             }
-            int d = ft_bin_num(ch);
-            stringstream ss;
-            ss << d;
-            string nn = ss.str();
+            string nn = ft_rev_covert_new(ch, 2);
             //cout << ch << " " << d << " " << nn << endl;
             news += nn;
-            i += pos;
+            i += pos-1;
         }
         else
             news += str[i];

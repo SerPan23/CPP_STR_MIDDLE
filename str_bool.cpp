@@ -1,5 +1,5 @@
 #include "strmiddle.h"
-bool ispodstroka(string str1, string str2)
+bool str_bool(string str1, string str2)
 {
     bool f = false;
     int len1 = ft_len(str1)-1;

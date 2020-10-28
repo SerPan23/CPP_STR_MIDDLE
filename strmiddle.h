@@ -2,7 +2,7 @@
 #define STRMIDDLE_H_INCLUDED
 #include <iostream>
 #include <string>
-#include <sstream>
+//#include <sstream>
 using namespace std;
 
 int ft_len(string str);
