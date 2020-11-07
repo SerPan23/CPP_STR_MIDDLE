@@ -9,10 +9,17 @@ string not_probel_str(string str)
         {
             for(int j = i; str[j] == ' '; j++)
                 kol++;
+            i += kol;
+            news += " ";
+            news += str[i];
+            kol = 0;
+            //cout << str[i] << endl;
         }
-        news += str[i];
-        i += kol;
-        kol = 0;
+        else
+        {
+            //cout << str[i] << endl;
+            news += str[i];
+        }
     }
     return news;
 }

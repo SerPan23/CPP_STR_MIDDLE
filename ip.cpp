@@ -17,7 +17,7 @@ bool ip(string str)
         }
         num += str[i];
     }
-    if(kolt != 4)
+    if(kolt != 3)
         return false;
     return true;
 }
