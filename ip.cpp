@@ -8,12 +8,18 @@ bool ip(string str)
         if(str[i] == '.')
         {
             int n = 0;
-            for(int j = 0; j < ft_len(num)-1; j++)
-                n += int(str[i]);
+            kolt++;
+            for(int j = 0; j < ft_len(num); j++)
+            {
+                if(num[j] - 48 >= 0 && num[j] - 48 <= 9)
+                    n += num[j] - 48;
+                else
+                    return false;
+            }
             if(n < 0 && n > 255)
                 return false;
             num = "";
-            kolt++;
+            continue;
         }
         num += str[i];
     }

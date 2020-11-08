@@ -3,7 +3,8 @@ string not_probel_str(string str)
 {
     string news;
     int kol = 0;
-    for(int i = 0; str[i] != '\0'; i++)
+    int len = ft_len(str);
+    for(int i = 0; i < len-1; i++)
     {
         if(str[i] == ' ')
         {
@@ -20,6 +21,7 @@ string not_probel_str(string str)
             //cout << str[i] << endl;
             news += str[i];
         }
+        //cout << news << "|i: " << i << endl;
     }
     return news;
 }

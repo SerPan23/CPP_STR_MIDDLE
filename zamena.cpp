@@ -11,13 +11,16 @@ string zamena(string str)
             {
                 //cout << str[j] << " " << int(str[j])-48 << " ";
                 ch *= 10;
-                ch += int(str[j])-48;
+                ch += str[j]-48;
                 pos++;
             }
             string nn = ft_rev_covert_new(ch, 2);
-            //cout << ch << " " << d << " " << nn << endl;
+            //cout << ch << " " << nn << endl;
             news += nn;
+            ch = 0;
+            nn = "";
             i += pos-1;
+            pos = 0;
         }
         else
             news += str[i];
