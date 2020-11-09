@@ -4,7 +4,7 @@ string not_probel_str(string str)
     string news;
     int kol = 0;
     int len = ft_len(str);
-    for(int i = 0; i < len-1; i++)
+    for(int i = 0; i < len; i++)
     {
         if(str[i] == ' ')
         {
