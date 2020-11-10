@@ -23,5 +23,8 @@ string not_probel_str(string str)
         }
         //cout << news << "|i: " << i << endl;
     }
+    int l = ft_len(news);
+    if(str[len-1] == ' ')
+        news.erase(--news.end());
     return news;
 }
