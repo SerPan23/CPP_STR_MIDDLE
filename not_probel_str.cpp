@@ -25,6 +25,11 @@ string not_probel_str(string str)
     }
     int l = ft_len(news);
     if(str[len-1] == ' ')
-        news.erase(--news.end());
+    {
+        string otv;
+        for(int i = 0; i < l; i++)
+            otv += news[i];
+        return otv;
+    }
     return news;
 }
